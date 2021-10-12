@@ -10,6 +10,11 @@ from videoapp.models import Video
 import main
 
 
+def hello_helmet(request):
+    return render(request, 'videoapp/home.html')
+
+
+
 class VideoCreateView(CreateView):
     model = Video
     form_class = VideoCreationForm
@@ -21,10 +26,10 @@ class VideoCreateView(CreateView):
         videofile = v.video_file
         yolo = main.MyYolo.GET()
         yolo.processVideo('media/'+str(videofile),'media/yolovideos'+str(videofile)[6:])
-        #main.MyYolo().processVideo(str(videofile),'media/yolovideos'+str(videofile)[6:])
-        v.yolo_file = 'media/yolovideos'+str(videofile)[6:]
+        v.yolo_file = 'yolovideos'+str(videofile)[6:]
         v.save()
         return reverse('videoapp:detail', kwargs={'pk': self.object.pk})
+
 
 class VideoDetailView(DetailView):
     model = Video

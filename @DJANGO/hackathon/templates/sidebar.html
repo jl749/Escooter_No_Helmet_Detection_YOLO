@@ -6,15 +6,16 @@
             <div>
                 <div class="nav__brand">
                     <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
-                    <a href="#" class="nav__logo">Helmetfilx</a>
+                    <a href="{% url 'videoapp:home' %}" class="nav__logo">Helmetfilx</a>
                 </div>
                 <div class="nav__list">
-                    <a href="#" class="nav__link">
+                    <a href="{% url 'videoapp:home' %}"
+                        class="nav__link{% if request.resolver_match.namespace == 'videoapp' and request.resolver_match.url_name == 'home' %} active{% endif %}">
                         <ion-icon name="home-outline" class="nav__icon"></ion-icon>
                         <span class="nav_name">Home</span>
                     </a>
                     <a href="{% url 'videoapp:list' %}"
-                       class="nav__link{% if request.resolver_match.namespace == 'videoapp' %} active{% endif %}">
+                       class="nav__link{% if request.resolver_match.namespace == 'videoapp' and request.resolver_match.url_name == 'list'%} active{% endif %}">
                         <ion-icon name="save-outline" class="nav__icon"></ion-icon>
                         <span class="nav_name">업로드 영상 분석</span>
                     </a>

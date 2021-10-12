@@ -73,3 +73,13 @@
     width: 640px;
     height: 480px;
 }
+
+.video {
+    margin-left: 2rem;
+}
+
+.video-box {
+    display: inline-block;
+    width: 500px;
+    height: 520px;
+}
