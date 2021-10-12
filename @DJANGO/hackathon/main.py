@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 BLOB_SIZE = (320, 320)
-CONFIDENCE = 0.7
+CONFIDENCE = 0.75
 YOLO_PATH = ''
 
 
