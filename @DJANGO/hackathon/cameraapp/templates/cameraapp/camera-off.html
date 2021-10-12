@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="camera">
+        <h1>실시간 분석</h1>
+        <div class="camera-control">
+            <button id="live-on" class="btn btn-success">시작</button>
+            <button id="live-off" class="btn btn-danger">정지</button>
+        </div>
+    </div>
+    <div class="live-image"></div>
+
+    <script>
+        let flag = false;
+            window.addEventListener('click',(e)=>{
+            if(e.target.id == 'live-on' && !flag){
+                const imgTag = document.createElement('img')
+                imgTag.id = 'live'
+                imgTag.src = "http://127.0.0.1:8000/camera/live"
+                const parentDiv = document.querySelector('.live-image');
+                parentDiv.appendChild(imgTag)
+                flag = true;
+            } else if (flag && e.target.id == 'live-off'){
+                axios.get('/camera/off/')
+                .then((response)=>{
+                    console.log(response);
+                    const imgTag = document.querySelector('#live');
+                    imgTag.remove();
+                    setTimeout(function(){
+                      flag = false
+                    },5000)
+                })
+            }
+        })
+        window.addEventListener('beforeunload',(e)=>{
+            if(flag){
+                axios.get('/camera/off/').then((res) => {
+                    console.log(res)
+                })
+            }
+        })
+    </script>
+{% endblock %}

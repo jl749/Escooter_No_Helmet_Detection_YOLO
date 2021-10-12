@@ -1,0 +1,9 @@
+asgiref==3.4.1
+beautifulsoup4==4.10.0
+Django==3.2.8
+django-bootstrap4==3.0.1
+numpy==1.21.2
+opencv-python==4.5.3.56
+pytz==2021.3
+soupsieve==2.2.1
+sqlparse==0.4.2

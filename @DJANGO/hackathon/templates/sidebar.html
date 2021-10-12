@@ -1,0 +1,45 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'toggle_sidebar.css' %}">
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                    <a href="#" class="nav__logo">Helmetfilx</a>
+                </div>
+                <div class="nav__list">
+                    <a href="#" class="nav__link">
+                        <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">Home</span>
+                    </a>
+                    <a href="{% url 'videoapp:list' %}"
+                       class="nav__link{% if request.resolver_match.namespace == 'videoapp' %} active{% endif %}">
+                        <ion-icon name="save-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">업로드 영상 분석</span>
+                    </a>
+
+                    <a href="{% url 'cameraapp:home' %}"
+                       class="nav__link{% if request.resolver_match.namespace == 'cameraapp' %} active{% endif %}">
+                        <ion-icon name="eye-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">실시간 영상 분석</span>
+                    </a>
+{##}
+{#                    <a href="#" class="nav__link">#}
+{#                        <ion-icon name="settings-outline" class="nav__icon"></ion-icon>#}
+{#                        <span class="nav_name">Settings</span>#}
+{#                    </a>#}
+{#                </div>#}
+{#                <a href="#" class="nav__link">#}
+{#                    <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>#}
+{#                    <span class="nav_name">Log out</span>#}
+{#                </a>#}
+            </div>
+        </nav>
+    </div>
+
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- JS -->
+    <script src="{% static 'js/toggle_sidebar.js' %}"></script>
+</body>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="list-header">
+        <span class="header-title">업로드된 영상 분석</span>
+        <span class="btn btn-success">
+            <a href="{% url 'videoapp:create' %}">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+                <span>Upload</span>
+            </a>
+        </span>
+    </div>
+    <div class="list-group">
+    {% for video in video_list %}
+          <a href="{% url 'videoapp:detail' pk=video.pk %}" class="list-group-item list-group-item-action">{{ video.title }}</a>
+    {% endfor %}
+    </div>
+{% endblock %}

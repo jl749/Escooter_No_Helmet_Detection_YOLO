@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div>
+            <h1>{{ target_video.title }}</h1>
+            <video width="500px" height="500px" controls autoplay>
+                <source src="{{ target_video.video_file.url }}" type="video/mp4">
+            </video>
+            <h1>{{ target_video.title }}</h1>
+            <video width="500px" height="500px" controls autoplay>
+                <source src="{{ target_video.yolo_file.url }}" type="video/mp4">
+            </video>
+    </div>
+
+{% endblock %}

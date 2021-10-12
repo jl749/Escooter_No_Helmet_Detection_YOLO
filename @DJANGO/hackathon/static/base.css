@@ -1,0 +1,75 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* VARIABLES CSS */
+:root {
+    --nav--width: 92px;
+
+    /* Colores */
+    --first-color: #0c5df4;
+    --bg-color: #12192c;
+    --sub-color: #b6cefc;
+    --white-color: #fff;
+
+    /* Fuente y tipografia */
+    --body-font: 'Poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+
+    /* z index */
+    --z-fixed: 100;
+}
+
+/* BASE */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.header {
+    margin-left: 2rem;
+    height: 5vh;
+}
+
+.content {
+    min-height: 75vh;
+}
+
+.list-header {
+    margin: 0.75rem;
+    vertical-align: middle;
+}
+
+.header-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.list-header .btn {
+    font-size: 1.1rem;
+    float: right;
+    margin-right: 2vw;
+}
+
+.list-header .btn a {
+    color: white;
+}
+
+.list-header .btn ion-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.camera {
+    margin: 2rem;
+}
+
+.camera-control {
+    margin-top: 1rem;
+}
+
+.live-image {
+    margin-left: 2rem;
+    background-image: url("images/no_camera.png");
+    width: 640px;
+    height: 480px;
+}

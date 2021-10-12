@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+    <div>
+        <div>
+            <form action="{% url 'videoapp:create' %}" method="POST"
+            enctype="multipart/form-data">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <div class="m-5">
+                    <input class="btn btn-success" type="submit" value="작성하기">
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

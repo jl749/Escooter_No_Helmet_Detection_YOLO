@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>실시간 분석</h1>
+    <div>
+        <span class="btn btn-success">
+            <a href="{% url 'cameraapp:on' %}">시작</a>
+        </span>
+        <span class="btn btn-danger">
+            <a href="{% url 'cameraapp:off' %}">정지</a>
+        </span>
+    </div>
+    <div>
+        <img src="http://127.0.0.1:8000/camera/live" style="width:500px;"/>
+    </div>
+{% endblock %}
