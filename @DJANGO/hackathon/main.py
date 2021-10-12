@@ -94,7 +94,8 @@ class MyYolo:
         frame_width = int(cap.get(3))
         frame_height = int(cap.get(4))
         fps = cap.get(cv2.CAP_PROP_FPS)
-        out = cv2.VideoWriter(savePath, 0x7634706d , fps, (frame_width, frame_height))
+        fourcc = cv2.VideoWriter_fourcc(*'H264')
+        out = cv2.VideoWriter(savePath, fourcc, fps, (frame_width, frame_height))
         while cap.isOpened():
             ret, frame = cap.read()  # read next frame
             if ret:
