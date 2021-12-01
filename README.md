@@ -2,6 +2,9 @@
 
 **weight file** + **project video** can be found  [HERE](https://drive.google.com/drive/folders/1d93KtB0RRVNFkZVwE1w5qEKabRfuCBcY?usp=sharing)
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/A2v8brJEb-M/0.jpg)](https://youtu.be/A2v8brJEb-M)
+
+
 ## YOLO
 model trained on 5000 e_scooter custom dataset
 - model trained using [Darknet framework](https://github.com/pjreddie/darknet)
@@ -22,3 +25,7 @@ code template from [HERE](https://github.com/HodenX/python-traffic-counter-with-
 ```
 python main.py --input test_video.mp4 --output output.mp4
 ```
+
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bbWIGhTZly0/0.jpg)](https://youtu.be/bbWIGhTZly0)
+
