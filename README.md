@@ -2,7 +2,7 @@
 
 **weight file** + **project video** can be found  [HERE](https://drive.google.com/drive/folders/1d93KtB0RRVNFkZVwE1w5qEKabRfuCBcY?usp=sharing)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/A2v8brJEb-M/0.jpg)](https://youtu.be/A2v8brJEb-M)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NVuJhiyGVc8/0.jpg)](https://youtu.be/NVuJhiyGVc8)
 
 
 ## YOLO
