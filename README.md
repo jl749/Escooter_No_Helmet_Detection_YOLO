@@ -6,13 +6,15 @@
 
 
 ## YOLO
-model trained on 5000 e_scooter custom dataset
+model trained on self collected 5000 e_scooter custom dataset
 - model trained with [Darknet framework](https://github.com/pjreddie/darknet)
 - dataset labeled using [yolo_mark](https://github.com/AlexeyAB/Yolo_mark)
 
 
 ## Django
 put weight file under hackathon/
+
+a webpage that can display and track helmet/no_helmet counts on different streets
 
 ![image](https://user-images.githubusercontent.com/67103130/141060294-7ade4dfd-f965-47a0-a521-b055a6fe6ebd.png)
 
