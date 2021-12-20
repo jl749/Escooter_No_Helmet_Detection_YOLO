@@ -7,8 +7,8 @@
 
 ## YOLO
 model trained on 5000 e_scooter custom dataset
-- model trained using [Darknet framework](https://github.com/pjreddie/darknet)
-- dataset labeled with [yolo_mark](https://github.com/AlexeyAB/Yolo_mark)
+- model trained with [Darknet framework](https://github.com/pjreddie/darknet)
+- dataset labeled using [yolo_mark](https://github.com/AlexeyAB/Yolo_mark)
 
 
 ## Django
